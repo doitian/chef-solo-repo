@@ -94,7 +94,7 @@ namespace :chef do
   end
 
   task :generate_json do
-    run "cd #{current_release} && bundle exec rake 'server:$CAPISTRANO:HOST$'"
+    run "cd #{current_release} && bundle exec thor 'server:$CAPISTRANO:HOST$'"
   end
 
   task :default do
