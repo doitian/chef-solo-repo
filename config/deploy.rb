@@ -7,7 +7,7 @@ default_run_options[:pty] = true
 depend :remote, :command, 'ruby'
 
 ssh_options[:forward_agent] = true
-set :application, "agilysys-chef-repo"
+set :application, "chef-solo-repo"
 
 set :scm, :git
 
