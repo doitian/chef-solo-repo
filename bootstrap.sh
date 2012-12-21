@@ -130,7 +130,7 @@ if [ -d /usr/local/rbenv ]; then
 fi
 run cp -f tmp/rbenv-profile.sh /etc/profile.d
 if ! grep 'rbenv init' /etc/skel/.bashrc &> /dev/null; then
-  run 'sed -i "1asource /etc/profile.d/rbenv-profile.sh" /skel/.bashrc'
+  run 'sed -i "1asource /etc/profile.d/rbenv-profile.sh" /etc/skel/.bashrc'
 fi
 run 'touch "/root/.bashrc"'
 if ! grep 'rbenv init' "/root/.bashrc" &> /dev/null; then
