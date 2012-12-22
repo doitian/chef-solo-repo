@@ -3,4 +3,5 @@
 /.chef/solo
 /.vagrant
 /json/servers
-
+/host_vendor
+/bin
