@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if ![ -f bin/foreman ]; then
+  bundle install --binstubs
+fi
+
+bin/foreman export <%= @formatter %> <%= @location %>

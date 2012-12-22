@@ -1,0 +1,11 @@
+env: .env
+app: <%= @app %>
+<% if @concurrency %>
+concurrency: <%= @concurrency %>
+<% end %>
+log: <%= @log %>
+port: <%= @port %>
+user: <%= @user %>
+root: <%= @deploy_to %>/current
+procfile: Procfile
+
