@@ -12,16 +12,16 @@ set :application, "chef-solo-repo"
 set :scm, :git
 
 # Package the repository and upload to server
-set :repository,  ".git"
-set :deploy_via, :copy
-set :copy_cache, true
-set :checkout, 'export'
-set :copy_exclude, ['.git/*', 'vendor/*']
+# set :repository,  ".git"
+# set :deploy_via, :copy
+# set :copy_cache, true
+# set :checkout, 'export'
+# set :copy_exclude, ['.git/*', 'vendor/*']
 
 # Or deploy via git server
-# set :repository,  "git@github.com:doitian/chef-solo-repo.git"
-# set :checkout, 'export'
-# set :deploy_via, :remote_cache
+set :repository,  "git@github.com:doitian/chef-private-repo.git"
+set :checkout, 'export'
+set :deploy_via, :remote_cache
 
 set :branch, 'master'
 set :keep_releases, 2
@@ -41,8 +41,8 @@ class ServerDSL
   end
 
   class FakeNode
-    def [](*args); end
-    def []=(*args); end
+    def [](*args); self; end
+    def []=(*args); self; end
     def set(*args); self; end
     alias_method :normal, :set
     alias_method :default, :set
