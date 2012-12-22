@@ -1,0 +1,7 @@
+default['postfix_ses']['ses_tools']['home'] = '/opt/ses-tools'
+default['postfix_ses']['ses_tools']['url'] = 'http://d36cz9buwru1tt.cloudfront.net/catalog/attachments/ses-tools-2012-07-09.zip'
+default['postfix_ses']['ses_tools']['checksum'] = '645ece12de6ed8ffd78c59916aab27e1'
+default['postfix_ses']['ses_url'] = 'https://email.us-east-1.amazonaws.com'
+default['postfix_ses']['aws']['access_key_id'] = ''
+default['postfix_ses']['aws']['secret_key'] = ''
+default['postfix_ses']['user'] = 'ses-mailer'
