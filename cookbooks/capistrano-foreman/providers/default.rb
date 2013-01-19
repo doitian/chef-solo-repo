@@ -24,7 +24,7 @@ action :install do
   port = new_resource.port
 
   unless application
-    Chef::Application.fatal!("rails_capistrano_foreman requires application name")
+    Chef::Application.fatal!("capistrano_foreman requires application name")
   end
 
   group group do

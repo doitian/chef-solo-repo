@@ -25,6 +25,8 @@ GEM
       ffi (~> 1.0, >= 1.0.6)
     erubis (2.7.0)
     ffi (1.2.0)
+    foreman (0.61.0)
+      thor (>= 0.13.6)
     highline (1.6.15)
     i18n (0.6.1)
     ipaddress (0.8.0)
@@ -79,6 +81,7 @@ PLATFORMS
 
 DEPENDENCIES
   chef (~> 10.16.2)
+  foreman
   json (~> 1.5.1)
   sunspot_solr
   thor

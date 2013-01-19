@@ -1,0 +1,12 @@
+default['capistrano_foreman']['location'] = nil
+default['capistrano_foreman']['formatter'] = 'upstart'
+default['capistrano_foreman']['application'] = nil
+default['capistrano_foreman']['deploy_to'] = nil
+default['capistrano_foreman']['user'] = 'deploy'
+default['capistrano_foreman']['group'] = 'deploy'
+default['capistrano_foreman']['keys'] = []
+default['capistrano_foreman']['force_keys'] = false
+default['capistrano_foreman']['procfile'] = {}
+default['capistrano_foreman']['concurrency'] = ''
+default['capistrano_foreman']['env'] = {}
+default['capistrano_foreman']['port'] = 5000

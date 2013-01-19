@@ -7,5 +7,5 @@ gem 'vagrant', '~> 1.0.5'
 # cookbooks dependencies
 
 # sunspot-tomcat
+gem 'foreman'
 gem 'sunspot_solr'
-

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: rails-capistrano-foreman
+# Cookbook Name:: capistrano-foreman
 # Recipe:: default
 #
 # Copyright 2012, YOUR_COMPANY_NAME
@@ -7,8 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-default_config = node['rails_capistrano_foreman']
-rails_capistrano_foreman default_config['application'] do
+default_config = node['capistrano_foreman']
+
+capistrano_foreman default_config['application'] do
   location default_config['location']
   formatter default_config['formatter']
   application default_config['application']
